@@ -1,0 +1,103 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: fit-content;
+    padding: 2px;
+
+    &_title {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 20px;
+
+        &_bg {
+            background-color: chocolate;
+        }
+    }
+
+    &_price {
+        height: 40px;
+        font-size: 47px;
+        margin-top: 10px;
+        margin-left: 5px;
+
+        &_bg {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            border-top: 2px solid white;
+            padding: 25px;
+            background-color: burlywood;
+        }
+    }
+
+    &_date {
+        margin-top: 40px;
+        margin-left: 5px;
+    }
+
+    &_speed {
+        padding: 20px;
+    }
+
+    &_info {
+        background-color: rgb(204, 205, 206);
+        color: rgb(105, 104, 104);
+        font-size: 14.5px;
+        font-weight: 500;
+        line-height: 23px;
+        text-align: center;
+        height: 50px;
+        padding: 10px;
+    }
+
+    &_currency,
+    &_date {
+        font-size: 14px;
+    }
+
+    &_title,
+    &_price,
+    &_currency,
+    &_date {
+        color: white;
+        font-weight: 600;
+    }
+}
+
+.blue {
+    background-color: rgb(33, 145, 167);
+
+    &_light {
+        background-color: rgb(115, 177, 186);
+    }
+}
+
+.green {
+    background-color: rgb(62, 135, 93);
+
+    &_light {
+        background-color: rgb(85, 160, 115);
+    }
+}
+
+.red {
+    background-color: rgb(174, 81, 81);
+
+    &_light {
+        background-color: rgb(224, 73, 73);
+    }
+}
+
+.black {
+    background-color: rgb(49, 49, 49);
+
+    &_light {
+        background-color: rgb(59, 59, 59);
+    }
+}
+
+.selected {
+    height: 85px;
+    margin-top: -10px;
+}
