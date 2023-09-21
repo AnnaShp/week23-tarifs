@@ -12,7 +12,6 @@ function App() {
         speed={tarif.speed}
         title_bg={tarif.title_bg}
         price_bg={tarif.price_bg}
-        selected={tarif.selected}
       />)}
 
     </div>
