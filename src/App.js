@@ -6,6 +6,7 @@ function App() {
   return (
     <div className={styles.App}>
       {RateInfo.map((tarif) => <Rates
+        key={tarif.title}
         title={tarif.title}
         price={tarif.price}
         speed={tarif.speed}
