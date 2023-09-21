@@ -19,7 +19,6 @@ const RateInfo = [
         "speed": "до 100Мбит/сек",
         "title_bg": 'red',
         "price_bg": 'red_light',
-        "selected": "selected",
     },
     {
         "title": "Безлимитный 1000",
