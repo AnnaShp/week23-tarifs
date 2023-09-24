@@ -1,17 +1,12 @@
 import './styles/Rates.scss';
-import React, { useState } from 'react';
+// import { useState } from 'react';
 
 
 function Rates(props) {
-    const { title, price, speed, title_bg, price_bg } = props;
-    const [select, setSelect] = useState(props.select);
-
-    const selectCard = () => {
-        setSelect(!select);
-    }
+    const { title, price, speed, title_bg, price_bg, id, selectId, makeSelected } = props;
 
     return (
-        <div className={select ? 'card selected' : 'card'} onClick={selectCard}>
+        <div className={`card ${selectId === id ? 'selected' : ''}`} onClick={() => makeSelected(id)}>
             <div className={`card_title_bg ${title_bg}`}>
                 <div className='card_title'>{title}</div>
             </div>
@@ -23,6 +18,7 @@ function Rates(props) {
             <div className='card_speed'>{speed}</div>
             <div className={`card_info`}>Обьем включенного трафика не ограничен</div>
         </div >
+
     )
 }
 
